@@ -1,0 +1,652 @@
+@import url('http://fonts.cdnfonts.com/css/graphik');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Graphik", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.00938em;
+}
+
+html {
+    min-width: 375px;
+    max-width: 1440px;
+}
+
+:root {
+    --grey: #585757;
+    --red: #e7332b;
+    --black: #1b1a20;
+    --white: #ffffff;
+    --green: #43B97f;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    max-width: 100%;
+    margin: 0 4rem;
+}
+
+/* ================NAVBAR====================== */
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 1100;
+    padding: 1.5rem 0;
+    width: 100%;
+    background-color: var(--white);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-left: 5rem;
+}
+
+nav ul li a {
+    color: var(--grey);
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+nav .enroll {
+    background-color: var(--red);
+    align-items: center;
+    justify-items: center;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-right: 4rem;
+}
+
+nav .enroll a {
+    color: var(--white);
+}
+
+nav .thumb {
+    position: absolute;
+    top: -15px;
+    right: 200px;
+    background-color: var(--red);
+    padding: 8px 8px 4px;
+    border-radius: 100%;
+}
+
+nav .thumb img {
+    width: 60px;
+}
+
+/* =====================HEADER======================= */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10rem;
+    margin: 0 4rem;
+    letter-spacing: 3;
+}
+
+.girl {
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.girl img {
+    width: 120%;
+}
+
+header .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.desc .p1 {
+    font-size: 18px;
+    color: var(--red);
+    font-weight: 300;
+    text-align: center;
+}
+
+.desc .p2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--black);
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.desc .line {
+    width: 33%;
+    margin-left: 300px;
+}
+
+.desc .p3 {
+    text-align: center;
+    font-size: 18px;
+    color: var(--black);
+    line-height: 1.5rem;
+    padding: 2rem 0 2rem 0;
+    margin: 0 4rem;
+}
+
+.boy img {
+    width: 350px;
+}
+
+.desc .mf {
+    position: absolute;
+    left: 0;
+    top: 500px;
+    width: 50px;
+}
+
+.desc .wire1 {
+    position: absolute;
+    width: 80px;
+    top: 500px;
+    left: 280px;
+}
+
+.desc .enroll-1 {
+    background-color: var(--red);
+    align-items: center;
+    justify-items: center;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.desc .enroll-1 a {
+    color: var(--white);
+}
+
+/* =================ABOUT SECTION============== */
+.about {
+    margin-top: 9rem;
+}
+
+.about .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.content .launch {
+    padding: 3rem;
+    width: 100%;
+}
+
+.content .launch p {
+    font-size: 24px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.content .power {
+    width: 60%;
+}
+
+.content .power img {
+    width: 90%;
+}
+
+.content .read {
+    padding: 2rem;
+    width: 100%;
+}
+
+.content .read p {
+    font-size: 24px;
+    color: var(--black);
+}
+
+.content .read a {
+    color: var(--green);
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+/* ===================WHYUS SECTION=============== */
+.y-wrapper {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 3rem;
+}
+
+.y-wrapper .left {
+    position: relative;
+    width: 50%
+}
+
+.left .line2 {
+    position: absolute;
+    top: -70px;
+    left: 350px;
+}
+
+.left .line2 img {
+    width: 70%;
+}
+
+.left .text p {
+    color: var(--red);
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.left .text h3 {
+    font-size: 43px;
+    color: var(--black);
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.y-wrapper .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.y-wrapper .right img {
+    width: 40%;
+}
+
+/* ======CARD SECTION======== */
+.whyus .cards {
+    background: linear-gradient(180deg, rgba(255, 244, 240, 0), #fff4f0 17.19%, #fff4f0 84.37%, rgba(255, 244, 240, 0)) !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.cards .card {
+    color:var(--black);
+    text-align: left;
+    background: var(--white);
+    border-radius: 18px !important;
+    padding: 58px 48px 93px 50px !important;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    transition:transform 0.5s;
+    top:0;
+}
+
+.cards .card:hover{
+    transform: translateY(-13px);
+}
+
+.card .text-box {
+    padding: 1rem;
+}
+
+.cards .card h1{
+    font-size: 60px;
+}
+
+.cards .card h3{
+    font-size: 36px;
+    margin: 1rem 0;
+}
+
+.cards .card p {
+    font-size: 18px;
+}
+
+.cards .card img {
+    display: flex;
+    float: right;
+    margin-right: -49px;
+    margin-top: -58px;
+    width: 42%;
+}
+
+.cards .cardone {
+    background: var(--red);
+    color: var(--white);
+    text-align: left;
+}
+
+/* =======================SECTION 5=============== */
+.quality{
+    background-color: var(--red);
+   margin-top:8rem;
+}
+
+.q-ctnt{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin:10rem 1rem 0;
+    padding:5rem 4rem 0;
+    gap:20px;
+}
+
+.q-left{
+    position:relative;
+    color:var(--white);  
+    padding:1rem; 
+}
+
+.q-left .line3 {
+    position: absolute;
+    top: -50px;
+    left: 340px;
+}
+
+.q-left .line3 img{
+    width: 100%;
+}
+
+.q-left .text h3{
+    font-size: 36px;
+    margin:10px 0 2rem;
+}
+
+.text .enroll-2{
+    margin:1rem 0 2rem;
+    background-color: var(--white);
+    padding: 10px 30px;
+    border-radius: 20px;
+    width:fit-content;
+}
+
+.text .enroll-2 a{
+    color:var(--red);
+}
+
+
+.text .btn-box{
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    align-items: center;
+    justify-content: center;
+    margin-left:-4rem;
+}
+
+.text .btn-box .btn{
+    display: flex;
+    align-items: center;
+    background-color: var(--red);
+    padding: 10px 40px 10px 10px;
+    width:fit-content;
+    margin: 1rem 0;
+    border:2px solid var(--white);
+    border-radius:50px;
+}
+
+.text .btn-box .btn img{
+    width:40px;
+    margin-right:10px;
+}
+
+.q-ctnt .q-right img{
+    width:600px;
+}
+.quality .dotted{
+    margin:2rem;
+    padding-bottom: 1rem;
+}
+
+.quality .dotted img{
+    width:150px;
+}
+/* =============================media query=============================== */
+@media (max-width:1024px) {
+    nav {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav .logo img {
+        margin-left: 2rem;
+        width: 250px;
+    }
+
+    nav ul {
+        margin-left: 1rem;
+        align-items: center;
+        width: 100%;
+        justify-content: normal;
+        gap: 48px;
+    }
+
+    nav .right {
+        margin-left: 2rem;
+        width:60%;
+        margin-right:-3rem;
+    }
+
+    nav .enroll {
+        justify-content: flex-end;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin-left: 1rem;
+        width:fit-content;
+    }
+
+    nav .thumb {
+        position: absolute;
+        top: -15px;
+        right: 236px;
+        background-color: var(--red);
+        padding: 8px 8px 4px;
+        border-radius: 100%;
+    }
+
+    nav .thumb img {
+        width: 50px;
+    }
+
+    /* =============HEADER SECTION============== */
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.00938em;
+        padding-top: 2rem;
+    }
+
+    .girl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .girl img {
+        width: 76%;
+    }
+
+    .desc .line {
+        width: 33%;
+        margin-left: 300px;
+    }
+
+    .boy img {
+        display: none;
+    }
+
+
+    .desc .mf {
+        left: 0;
+        top: 340px;
+        width: 50px;
+    }
+
+    .desc .wire1 {
+        width: 10%;
+        top: 400px;
+        left: 550px;
+    }
+
+    /* ======CARD SECTION====== */
+    .whyus .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    nav .logo {
+        width:100%;
+    }
+    nav .logo img {
+        width: 330px;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    nav .thumb {
+        position: absolute;
+        top: -15px;
+        right: 220px;
+    }
+
+    nav .right {
+        margin-left: 1rem;
+        width: 50%;
+    }
+
+    /* -------HEADER--------- */
+    header {
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+    margin:0 auto;
+    }
+
+    .girl {
+        margin-top:4rem;
+    }
+
+    .girl img {
+        width: 100%;
+    }
+
+    .desc .line {
+        width: 33%;
+        margin-left: 300px;
+    }
+
+    .desc .mf {
+        left: 0;
+        top: 450px;
+        width: 50px;
+    }
+
+    .desc .wire1 {
+        width: 20%;
+        top: 430px;
+        left: 360px;
+    }
+
+    /* ========about========= */
+    .about {
+        margin-top: 12rem;
+        width:100%;
+    }
+    
+    .about .content {
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .launch{
+        width:100%;
+    }
+
+    .content .power {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin:0 auto;
+    }
+    
+    .content .power img {
+     width:41%;
+    }
+    
+    .content .read {
+       width: 100%;
+       margin:0 auto;
+    }
+
+/* =======whyus========= */
+.y-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.y-wrapper .left {
+    position: relative;
+    width: 100%;
+}
+
+.left .text h3{
+    font-size:24px;
+}
+
+.y-wrapper .right {
+   display:none;
+}
+
+.whyus .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+}
