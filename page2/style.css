@@ -183,7 +183,7 @@ header .maleface img {
 
 .network {
     width: 100%;
-    background-image: url(./TP-images/bgsection2.png);
+    background-image: url(../images/bgsection2.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 5rem;
